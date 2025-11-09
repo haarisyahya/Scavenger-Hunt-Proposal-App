@@ -1,8 +1,8 @@
-const PHASE_BOUNDARIES = {
+/*const PHASE_BOUNDARIES = {
   phase1: 5,
   phase2: 10,
   phase3: 15
-};
+};*/
 
 export const initializeProgress = () => {
   const defaultProgress = {

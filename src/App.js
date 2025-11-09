@@ -30,7 +30,7 @@ function App() {
 
   const [progress, setProgress] = useState(loadProgress());
   const [showConfetti, setShowConfetti] = useState(false);
-  const [muted, setMuted] = useState(false); // Add mute control
+ 
 
    const handleRestart = () => {
     resetProgress();
