@@ -1,0 +1,247 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff0f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.clue-container, .proposal-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.romantic-container{
+   max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+h1, h2 {
+  color: #e75480;
+}
+
+.clue-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 2rem 0;
+  font-style: italic;
+}
+
+button {
+  background: #e75480;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0.5rem;
+}
+
+button:hover {
+  background: #d23369;
+  transform: translateY(-2px);
+}
+
+.location-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem auto;
+}
+
+.proposal-content {
+  margin-top: 2rem;
+}
+
+.ring {
+  margin: 2rem 0;
+  animation: pulse 2s infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.spin {
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-left: 8px;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+/* home.css */
+.home button {
+  background: #e75480;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+}
+
+/* PhaseTransition.css */
+.phase-transition-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff5f5 0%, #ffecec 100%);
+  padding: 2rem;
+}
+
+.phase-transition-card {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.heart-icon {
+  color: #e75480;
+  font-size: 1.8rem;
+}
+
+.stats-box {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.stat-item {
+  background: #fff9f9;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  min-width: 120px;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e75480;
+  display: block;
+}
+
+.next-phase-button, .proposal-button {
+  background: #e75480;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  margin: 1.5rem 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.proposal-button {
+  background: #c23369;
+  font-size: 1.2rem;
+  padding: 1.2rem 2.5rem;
+}
+
+.memory-box {
+  background: #fdf2f2;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.romantic-quote {
+  font-style: italic;
+  color: #888;
+  margin-top: 2rem;
+}
+
+/* Add to your existing styles */
+.stat-item {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.stat-item.active {
+  background: #fff0f5;
+  border: 1px solid #e75480;
+}
+
+.phase-star {
+  color: gold;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  font-size: 1rem;
+}
+
+.final-message {
+  font-weight: bold;
+  color: #e75480;
+  margin-top: 10px;
+}
+
+.restart-button {
+  position: fixed;
+  bottom: 20px;      /* space from bottom */
+  left: 20px;        /* space from left */
+  padding: 10px 16px;
+  background-color: #e75480;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0.5rem;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  z-index: 1000;     /* keep above other elements */
+}
+
+/* Hover/active effects */
+.restart-button:hover {
+  background-color: #d23369;
+  transform: translateY(-2px);
+}
+
+.restart-button:active {
+  transform: translateY(0);
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 600px) {
+  .restart-button {
+    padding: 8px 12px;
+    font-size: 14px;
+    bottom: 15px;
+    left: 15px;
+  }
+}
+
+
